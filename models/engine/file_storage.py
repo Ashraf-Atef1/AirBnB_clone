@@ -36,7 +36,7 @@ class FileStorage():
         except FileNotFoundError:
             return
         for key, value in json_dict.items():
-            self.all()[key] = self.create_object(key.split(".")[0])(**value)
+            self.all()[key] = self.create_object(value["__class__"])(**value)
     @staticmethod
     def create_object(class_name):
         """Create an instance from a class name"""
