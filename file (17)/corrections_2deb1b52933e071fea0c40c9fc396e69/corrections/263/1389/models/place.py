@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""The module contains the class Place that inherits from BaseModel"""
 from models.base_model import BaseModel
 
-
 class Place(BaseModel):
-    """The class Place that inherits from BaseModel"""
+    """The class BaseModel that defines all common \
+        attributes/methods for other classes"""
     city_id = ""
     user_id = ""
     name = ""

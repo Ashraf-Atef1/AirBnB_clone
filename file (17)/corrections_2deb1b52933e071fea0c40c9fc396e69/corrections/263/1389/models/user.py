@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""The module contains the class User that inherits from BaseModel"""
 from models.base_model import BaseModel
 
-
 class User(BaseModel):
-    """The class User that inherits from BaseModel"""
+    """The class BaseModel that defines all common \
+        attributes/methods for other classes"""
     email = ""
     password = ""
     first_name = ""
     last_name = ""
+    

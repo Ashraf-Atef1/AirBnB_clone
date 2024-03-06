@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+"""The module contains the class State that inherits from BaseModel"""
 from models.base_model import BaseModel
 
+
 class State(BaseModel):
-    """The class BaseModel that defines all common \
-        attributes/methods for other classes"""
+    """The class State that inherits from BaseModel"""
     name = ""
-    
